@@ -191,81 +191,109 @@ section#grid-layout{
     grid-template-rows: 1fr 1fr 1fr  ;
 
 }
-
 .item-1 {
     grid-column: 1/ 2;
     grid-row: 1/ 4;
 }
-
 .item-2 {
     background-color: rgb(8, 195, 61);
     grid-column: 2/4;
     grid-row: 1/2;
 }
-
 .item-3 {
     grid-column: 4/5;
     grid-row: 1/2;
     background-color: red;
     
 }
-
 .item-4{
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: orange;
 }
-
 .item-5{
     grid-column: 3/4;
     grid-row: 2/3;
     background-color: rgb(236, 26, 26);
 }
-
 .item-6{
     grid-column: 4/5;
     grid-row: 2/4;
     background-color: rgb(30, 223, 30);
 }
-
 .item-7{
     grid-column: 2/3 ;
     grid-row: 3/4;
     background-color: red;
-
 }
-
 .item-8{
     grid-column: 3/4;
     grid-row: 3/4;
     background-color: orange;
 }
 
-
-/* 
-
-
-.item-2 {
-    grid-column-start:  1;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
+section#grid-area{
+    height: 100vh;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
 }
-
-.item-4 {
     
-    grid-row-start: 2;
-    grid-row-end: 6;
-} */
-
-/* .item-2{
-    grid-row-start: 2;
-    grid-row-end: 3;
+section#grid-area{
+   
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-.item-2:hover{
-    grid-row-start: 2;
-    grid-row-end: 4;
-} */
+
+
+.container1area {
+    width: 50vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "area-1 area-1 area-1 area-1 area-1"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-2 area-3 area-3 area-3 area-4"
+      "area-5 area-5 area-5 area-5 area-4";
+  }
+
+.area-1{
+    grid-area: area-1;
+    border-radius: 1rem;
+    background-color: Grey ;
+}
+.area-2{
+    grid-area: area-2;
+    border-radius: 1rem;
+    background-color: grey;
+}
+.area-3{
+    grid-area: area-3;
+    border-radius: 1rem;
+    background-color: bisque;
+}
+.area-4{
+    grid-area: area-4;
+    border-radius: 1rem;
+    background-color: grey;
+}
+.area-5{
+    grid-area: area-5;
+    border-radius: 1rem;
+    background-color: grey;
+     
+}
+
 
 
 /* GRID ALIGN */
